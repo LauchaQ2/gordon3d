@@ -1,0 +1,23 @@
+
+.product{
+    margin-bottom: 15px;
+}
+.w-150px{
+    width: 150px;
+}
+.w-200px{
+    width: 200px;
+}
+.h-d{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+}
+.h-m{
+    align-items: center;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px!important;
+}
