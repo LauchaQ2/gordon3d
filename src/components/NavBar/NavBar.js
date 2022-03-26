@@ -6,15 +6,31 @@ import './NavBar.css';
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import Button from 'react-bootstrap/Button'
 import MenuIcon from '@mui/icons-material/Menu';
-
+import {Link} from 'react-router-dom';
 
 export default function NavBar(){
 
+    const [fixedNavBar, setFixedNavBar] = useState(false)
     const [size, setSize] = useState(window.innerWidth);
     const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  useEffect(() => {
+    function onScrollWindow() {
+        if(window.scrollY > 180 ){
+            setFixedNavBar(true)
+        }else{
+            setFixedNavBar(false) 
+        }
+    }
+    window.addEventListener("scroll", onScrollWindow)
+    //unmounth
+    return () => {
+        window.removeEventListener("scroll", onScrollWindow)
+    }
+}, [])  
 
     useEffect(()=>{
         const handleSize = () =>{
@@ -31,10 +47,10 @@ export default function NavBar(){
                         <a className="linknav" href="#inicio">
                             <li className={size < 500 ? "nav-link gordonfont mb-3 fs-1" : "nav-link gordonfont"} style={{ color: "#000000" }}>INICIO</li>
                         </a>
-                        <a  className="linknav">
+                        <a href="#productos" className="linknav">
                             <li className={size < 500 ? "nav-link gordonfont fs-1" : "nav-link gordonfont"} style={{ color: "#000000" }}>PRODUCTOS</li>
                         </a>
-                        <a  className="linknav">
+                        <a className="linknav" href="#nosotros">
                             <li className={size < 500 ? "nav-link gordonfont mb-3 fs-1" : "nav-link gordonfont"} style={{ color: "#000000" }}>NOSOTROS</li>
                         </a>
                         <a  className="linknav"> 
@@ -46,11 +62,14 @@ export default function NavBar(){
                     </a>
                 </Offcanvas.Body>
             </Offcanvas>
+            <div className={fixedNavBar ? "sticky-top" : null}>
             <div id="inicio" className="container-fluid background-navbar align-items-center d-flex justify-content-around flex-wrap p-2">
                 <Button className="menuNav">
                     <MenuIcon className="menuIcon" sx={{ fontSize: 50 }} onClick={handleShow}/>
                 </Button>    
                     <img className="logo" src={logo} />
-            </div></>
+            </div>
+            </div>
+            </>
     )
 }

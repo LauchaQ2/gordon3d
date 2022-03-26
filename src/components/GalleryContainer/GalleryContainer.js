@@ -21,7 +21,7 @@ export default function GalleryContainer(){
 
 
     return(
-        <div className='container-fluid bg-black p-3'>
+        <div id="productos" className='container-fluid bg-black p-3'>
             <GalleryListContainer size={size} products={products}/>
         </div>
     )

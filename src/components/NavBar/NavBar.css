@@ -5,7 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .background-navbar{
     background-color: #A5F8FC;
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);}
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    height: 150px;
+}
+.background-navbarScr{
+    background-color: #A5F8FC;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    height: max-content;
+}
 .logo{
     width: 100px;
 }
@@ -47,17 +54,21 @@ line-height: 50px;
 .menuNav{
     position: absolute;
     left:20px;
-    background-color: inherit;
-    border: 0;
+    background-color: inherit!important;
+    border: 0!important;
 }
 .menuNav:focus,.menuNav:active,.menuNav:hover{
-    background-color: inherit;
-    border: 0;
-    outline: none;
-    box-shadow: none;
+    background-color: inherit!important;
+    border: 0!important;
+    outline: none!important;
+    box-shadow: none!important;
 }
 .menuIcon{
     color:black!important;
+}
+.menuIconScr{
+    font-size: 30px!important;
+    color:black
 }
 .offcanvasbody{
     display: flex;
@@ -68,4 +79,7 @@ line-height: 50px;
 .gordonimg{
     width: 200px;
     height: 100px;
+}
+.logoScr{
+    width: 50px;
 }
