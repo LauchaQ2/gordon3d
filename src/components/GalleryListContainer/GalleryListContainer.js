@@ -1,6 +1,10 @@
 import React from 'react';
 import GalleryItem from '../GalleryItem/GalleryItem';
 import './GalleryListContainer.css';
+import ReactPlayer from 'react-player'
+import video1  from '../../videos/produccion3d.mp4';
+import video2 from '../../videos/maradona3d.mp4';
+import Divider from '@mui/material/Divider';
 
 export default function GalleryListContainer({products,size}){
     return(
@@ -19,6 +23,7 @@ export default function GalleryListContainer({products,size}){
                     <h1 className='fs-4 text-center mb-4 mt-2'>
                         <a target="_blank" className='no-dec text-white' href="https://www.instagram.com/gordon.3d/">Ir a nuestro catálogo</a>
                     </h1>
+                    <Divider className='divider'/>
         </>
     )
 }

@@ -4,3 +4,6 @@
 .no-dec:hover{
     border-bottom: 1px solid white;
 }
+.divider{
+    border: 1px solid white!important;
+}

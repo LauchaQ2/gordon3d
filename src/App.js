@@ -6,8 +6,7 @@ import GalleryContainer from './components/GalleryContainer/GalleryContainer.js'
 function App() {
   return (
     <>
-    <NavBar/>
-    <GalleryContainer/>
+    <HomePage/>
     </>
   );
 }
