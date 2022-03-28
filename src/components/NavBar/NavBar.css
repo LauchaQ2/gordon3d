@@ -6,7 +6,7 @@
 .background-navbar{
     background-color: #A5F8FC;
     box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
-    height: 150px;
+    height: 80px;
 }
 .background-navbarScr{
     background-color: #A5F8FC;
@@ -14,7 +14,7 @@
     height: max-content;
 }
 .logo{
-    width: 100px;
+    width: 50px;
 }
 .nav{
     display: flex!important;

@@ -1,0 +1,12 @@
+.redes{
+    width: 50px;
+}
+.contredes{
+    padding: 30px 100px 100px 100px;
+}
+.no-dec2{
+    text-decoration: none!important;
+}
+.no-dec2:hover{
+    border-bottom: 0px solid black!important;
+}

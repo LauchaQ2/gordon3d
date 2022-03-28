@@ -1,0 +1,12 @@
+.bg-footer{
+    background-color: #A5F8FC;
+    height: 50px;
+    font-weight: 500;
+}
+.h-auto{
+    height: 100%!important;
+}
+.logofooter{
+    width: 30px;
+    margin-right: 5px;
+}
