@@ -52,7 +52,7 @@ export default function NavBar(){
                         <a className="linknav" href="#nosotros">
                             <li className={size < 500 ? "nav-link gordonfont mb-3 fs-1" : "nav-link gordonfont"} style={{ color: "#000000" }}>NOSOTROS</li>
                         </a>
-                        <a  className="linknav"> 
+                        <a  className="linknav" href="#contacto"> 
                             <li className={size < 500 ? "nav-link gordonfont mb-3 fs-1" : "nav-link gordonfont"} style={{ color: "#000000" }}>CONTACTO</li>
                         </a>
                     </ul>
